@@ -8,6 +8,7 @@ public class ExceptionTest2 {
     } catch(ArrayIndexOutOfBoundsException e) {
       System.out.println("代入できませんでした");
       System.out.println("例外は" + e + "です");
+      e.printStackTrace();
     }
     System.out.println("終了します");
   }
