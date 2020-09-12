@@ -11,6 +11,14 @@ public class Q11_6 {
   // }
 
   void setSize(int w, int h) {
+    // 問11-8
+    // マイナスになるなら強制的に0を入れる
+    if (w < 0) {
+      w = 0;
+    }
+    if (h < 0) {
+      h = 0;
+    }
     width = w;
     height = h;
   }
@@ -43,5 +51,11 @@ public class Q11_6 {
     } else {
       return false;
     }
+  }
+
+  // 問11-7
+  // @Override
+  public String toString() {
+    return "Rectangle(" + width + "," + height + ")";
   }
 }
