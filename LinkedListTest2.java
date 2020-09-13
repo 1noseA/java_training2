@@ -18,7 +18,7 @@ public class LinkedListTest2 {
     while (queue.peek() != null) {
       // 要素の抽出と削除（peekメソッド）
       String name = queue.poll();
-      System.out.println("pollの戻り値 　= " + name);
+      System.out.println("pollの戻り値  = " + name);
       System.out.println("poll後のqueue = " + queue);
     }
   }
