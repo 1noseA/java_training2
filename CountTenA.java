@@ -1,3 +1,4 @@
+// 手軽だがTreadクラスを拡張してしまうと他のクラスを拡張できない
 public class CountTenA extends Thread {
   public static void main(String[] args) {
     CountTenA ct = new CountTenA();
