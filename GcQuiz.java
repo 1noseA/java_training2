@@ -4,6 +4,7 @@ class ClassA {
   public ClassA(String name) {
     this.name = name;
     last = this;
+    System.out.println(this + "が生まれました");
   }
 
   @Override
@@ -54,6 +55,19 @@ public class GcQuiz {
     arrayB[2] = null;
     ClassB e = new ClassB("ルーシー", new ClassA("ティギー"));
     e = null;
-  }
 
+    System.gc();
+    System.out.println("a = " + a);
+    System.out.println("b = " + b);
+    System.out.println("c = " + c);
+    System.out.println("d = " + d);
+    System.out.println("e = " + e);
+    System.out.println("arrayA = " + arrayA);
+    System.out.println("arrayB[0] = " + arrayB[0]);
+    System.out.println("arrayB[1] = " + arrayB[1]);
+    System.out.println("arrayB[2] = " + arrayB[2]);
+    System.out.println("arrayB[3] = " + arrayB[3]);
+    System.out.println("ClassA.last = " + ClassA.last);
+    System.out.println("GcQuiz.q = " + GcQuiz.q);
+  }
 }
